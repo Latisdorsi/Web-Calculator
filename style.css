@@ -1,114 +1,77 @@
-/*===== Personal Flavour ======*/
-*
-{
+* {
     /* Better text styling */
+    
     font: bold 14px Arial, sans-serif;
-
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            -ms-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body
-{
+body {
     background-color: #dfe1ff;
 }
-/*====== alignment =====*/
-.centered
-{
+/*====== Alignment =====*/
+
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
-
-    -webkit-transform: translate(-50%,-50%);
-       -moz-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-         -o-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
-.vertical-centered
-{
-    position: absolute;
-    top: 50%;
-
-    width: 100%;
-
-    -webkit-transform: translateY(-50%);
-       -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-         -o-transform: translateY(-50%);
-            transform: translateY(-50%);
-}
-
 
 /*===== Container, Rows, and Columns =====*/
-.container
-{
+.container {
     height: 340px;
     padding: 20px 9px;
-
     background-color: #679ccc;
     box-shadow: 0 4px #009de4, 0 10px 15px rgba(0, 0, 0, .2);
 }
-
 .row,
 .column,
-#displaybox
-{
+#displaybox {
     position: relative;
-
     overflow: hidden;
-
     margin: 0;
-
     text-align: center;
-
     border: none;
 }
-.row
-{
+.row {
     margin: 10px;
 }
 .column,
-#displaybox
-{
+#displaybox {
     display: inline-block;
-
     width: 80px;
     height: 40px;
     margin: 5px;
-
     color: #777;
     background-color: #fff281;
     /*Black Box Shadow With 20% Opacity*/
+    
     box-shadow: 0 4px rgba(0, 0, 0, .2);
 }
 .column:active,
-.column:hover
-{
+.column:hover {
     transition: all .2s ease;
-
     color: white;
     background-color: #4b9916;
 }
-.column:active
-{
+.column:active {
     top: 4px;
-
     border: none;
     box-shadow: 0 0 #6b54d3;
 }
-#displaybox
-{
+#displaybox {
     top: 0;
-
     width: 260px;
     padding: 10px;
-
     text-align: right;
-
     color: black;
     background-color: #fff;
     box-shadow: inset 0 4px rgba(0, 0, 0, .4);
