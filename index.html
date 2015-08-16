@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Calculator</title>
+	<!--CSS STYLES
+	===================-->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="container centered">
+			<div class="row" >
+				<input type="text"  id="displaybox" readonly value="">
+				<input type="button" class="column" onclick='calculate.InputValue("c")' value="c"></div>
+			<div class="row">
+				<input type='button' class="column" onclick='calculate.InputValue("7")' value="7" >
+				<input type='button' class="column" onclick='calculate.InputValue("8");' value="8"  >
+				<input type='button' class="column" onclick='calculate.InputValue("9");' value="9"  >				
+				<input type="button" class="column" onclick='calculate.InputValue("/")' value="/">
+			</div>
+			<div class="row">
+				<input type="button" class="column" onclick='calculate.InputValue("4")' value="4">
+				<input type="button" class="column" onclick='calculate.InputValue("5")' value="5">
+				<input type="button" class="column" onclick='calculate.InputValue("6")' value="6">
+				<input type="button" class="column" onclick='calculate.InputValue("*")' value="*">				
+			</div>
+			<div class="row">
+				<input type="button" class="column" onclick='calculate.InputValue("1")' value="1">
+				<input type="button" class="column" onclick='calculate.InputValue("2")' value="2">
+				<input type="button" class="column" onclick='calculate.InputValue("3")' value="3">
+				<input type="button" class="column" onclick='calculate.InputValue("+")' value="+">
+			</div>
+			<div class="row">
+				<input type="button" class="column" onclick='calculate.InputValue("0")' value="0">
+				<input type="button" class="column" onclick='calculate.InputValue(".")' value=".">
+				<input type="button" class="column" onclick='calculate.InputValue("=")' value="=">
+				<input type="button" class="column" onclick='calculate.InputValue("-")' value="-">
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- Script
+	======================-->
+	<script src="script.js"></script>
+
+</body>
+</html>
+
